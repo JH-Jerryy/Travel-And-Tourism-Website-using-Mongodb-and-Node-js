@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book - Tourenzo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo"><img src="assets/images/logo.png" style="height:50px; border-radius:50%; margin-right:10px;">TOURENZO</a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="locations.html">Destinations</a>
+            <a href="packages.html">Packages</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div style="padding-top:120px; display:flex; justify-content:center;">
+        <div class="location-card" style="width:600px; padding:40px; cursor:default;">
+            <h2 style="color:var(--gold); text-align:center;">Confirm Booking</h2>
+            <h3 id="pkg-title" style="text-align:center; margin-bottom:20px;">Loading...</h3>
+            
+            <form id="bookingForm">
+                <label>Travel Date</label>
+                <input type="date" name="date" required style="width:100%; padding:10px; margin-bottom:15px; background:#333; border:1px solid #555; color:white;">
+                
+                <label>Travelers</label>
+                <input type="number" id="travelers" name="travelers" value="1" min="1" style="width:100%; padding:10px; margin-bottom:15px; background:#333; border:1px solid #555; color:white;">
+                
+                <label>Payment Method</label>
+                <select name="payment" style="width:100%; padding:10px; margin-bottom:20px; background:#333; border:1px solid #555; color:white;">
+                    <option>Credit Card (Visa/Master)</option>
+                    <option>Bank Transfer</option>
+                    <option>Crypto</option>
+                </select>
+                
+                <h3 style="text-align:right; margin-bottom:20px;">Total: Rs <span id="totalPrice">0</span></h3>
+                <button type="submit" class="btn-gold" style="width:100%;">Pay & Confirm</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
