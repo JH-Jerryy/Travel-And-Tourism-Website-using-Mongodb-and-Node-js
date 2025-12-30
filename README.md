@@ -15,7 +15,7 @@ Initially conceptualized in PHP/MySQL, this project has been fully migrated to a
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+)
+* **Frontend:** HTML5, CSS3, JavaScript
 * **Backend:** Node.js, Express.js
 * **Database:** MongoDB (using Mongoose ODM)
 * **Security:** Bcrypt.js for encryption, CORS
